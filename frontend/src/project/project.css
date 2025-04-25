@@ -1,0 +1,130 @@
+.project {
+    background: rgba(255, 248, 230, 0.95);
+    border-radius: 12px;
+    border: 2px solid var(--first-color);
+    padding: 1.5rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--third-color);
+    border-bottom: 2px solid var(--fifty-color);
+    display: inline-block;
+    padding-bottom: 0.3rem;
+  }
+  
+  .project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .project-item {
+    background-color: #C4A77DAD;
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .project-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .project-item h2 {
+    color: var(--sixty-color);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-item p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .project-links {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .project-link {
+    text-decoration: none;
+    color: var(--fourty-color);
+    font-weight: bold;
+    border: 1px solid var(--fourty-color);
+    padding: 0.3rem 0.7rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .project-link:hover {
+    background-color: var(--fourty-color);
+    color: white;
+  }
+  
+  .delete-button {
+    background-color: var(--third-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete-button:hover {
+    background-color: #a60000;
+  }
+  
+  .project-form {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--second-color);
+    padding: 1.5rem;
+    border-radius: var(--radius);
+  }
+  
+  .project-form input,
+  .project-form textarea {
+    padding: 0.8rem;
+    border: 1px solid var(--fifty-color);
+    border-radius: var(--radius);
+    font-family: inherit;
+  }
+  
+  .project-form button {
+    background-color: var(--fifty-color);
+    color: white;
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: var(--radius);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project-form button:hover {
+    background-color: #996312;
+  }
+  
+  .message {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: rgba(255, 248, 230, 0.95);
+    border-left: 4px solid var(--fifty-color);
+    color: var(--text-dark);
+    font-style: italic;
+  }
+  
+  .no-projects-message {
+    font-style: italic;
+    color: var(--sixty-color);
+    margin-top: 1rem;
+  }

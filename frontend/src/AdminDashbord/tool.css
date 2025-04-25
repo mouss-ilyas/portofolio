@@ -1,0 +1,35 @@
+.filter-container select {
+    margin-left: 0.5rem;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 2px solid var(--second-color);
+    background-color: rgba(255, 248, 230, 0.95);
+    color: var(--second-color);
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .filter-container select:focus {
+    outline: none;
+    border-color: var(--third-color);
+    background-color: #f3f3f3;
+  }
+  
+  .filter-container select option {
+    padding: 0.8rem;
+    background-color: #fff;
+    color: var(--second-color);
+    border: none;
+    cursor: pointer;
+  }
+  
+  .filter-container select option:hover {
+    background-color: #f5deb3;
+  }
+  
+  .filter-container select option:checked {
+    background-color: var(--first-color);
+    color: white;
+  }
+  

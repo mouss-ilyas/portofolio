@@ -1,0 +1,69 @@
+
+*{
+  list-style: none;
+margin: 0;
+padding: 0;
+
+}
+nav {
+  width: 100%;
+}
+@media (min-width:576px) {
+  nav{
+    align-items: center;
+  }
+}
+@media (max-width:576px) {
+  nav li {
+    margin-bottom: 2px;
+  }
+  nav a:hover{
+    margin-left: 30px;
+    transition: 1s ease-in-out;
+  }
+}
+
+nav li:hover a::after {
+  content: "";
+  display: block; /* 👈 Essentiel */
+  width: 100%;
+  height: 2px;
+  background-color: var(--fourty-color);
+  animation: widthtransform 1s ease-out;
+}
+@keyframes widthtransform {
+  from{
+    width: 0;
+  }
+}
+
+
+nav img{
+  height: 70px;
+}
+a{
+  color: var(--third-color);
+  text-decoration: none;
+}
+
+.loginbutton {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.loginbutton a {
+  text-decoration: none;
+  color: white;
+  background-color:var(--fourty-color);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.loginbutton a:hover {
+  background-color: var(--sixty-color); /* Une autre de tes couleurs personnalisées */
+  transform: scale(1.05);
+}

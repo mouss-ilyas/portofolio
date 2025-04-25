@@ -1,0 +1,21 @@
+:root{
+    --first-color:#C4A77D;
+    --second-color:#6B705C;
+    --third-color:#8B0000;
+    --fourty-color:#208384;
+    --fifty-color:#b27418;
+    --sixty-color:#183e47;
+}
+
+nav{
+    font-family: "Cinzel", sans-serif;
+    font-weight: bold;
+}
+
+body{
+ font-family: "Sour Gummy", sans-serif;
+ box-sizing: border-box;
+ background-image: url("./images/t.jpg");
+ background-repeat:no-repeat;
+ background-size: cover;
+}

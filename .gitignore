@@ -1,0 +1,22 @@
+# Python virtual environment
+venv/
+env/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]  # Ignore Python bytecode files
+*.pyo
+
+# Database files
+*.db
+
+# Node.js modules
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Static files (if applicable)
+static/
+*.log  # Ignore log files

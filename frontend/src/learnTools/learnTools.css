@@ -1,0 +1,109 @@
+.learntools h2 {
+    font-family: "Cinzel", serif;
+    font-size: 2.5rem;
+    color: var(--third-color);
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 1px 1px #f5deb3;
+    border-bottom: 3px double var(--first-color);
+    padding-bottom: 0.5rem;
+  }
+  
+  .learntools  .tools-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .learntools  .tool-card {
+    background: rgba(255, 248, 230, 0.95);
+    border-radius: 12px;
+    border: 2px solid var(--first-color);
+    padding: 1.5rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transform: scale(0.5);
+    opacity: 0;
+    animation: scaleUp 0.5s ease forwards;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  @keyframes scaleUp {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .learntools  .tool-card:hover {
+    transform: scale(1.05); 
+  }
+  
+  .learntools  .tool-card h3 {
+    font-family: "Cinzel", serif;
+    font-size: 1.6rem;
+    color: var(--second-color);
+    margin-bottom: 1rem;
+  }
+  
+  .learntools  .tool-card p {
+    font-family: "Georgia", serif;
+    font-size: 1.1rem;
+    color: #2f2f2f;
+  }
+  
+  .learntools  .tool-card strong {
+    color: var(--third-color);
+  }
+  
+  .learntools   .learntools li::before {
+    content: "✦";
+    color: var(--third-color);
+    font-size: 1.2rem;
+    position: absolute;
+    left: -1.5rem;
+  }
+  
+  .learntools li:hover {
+    transform: scale(1.02);
+    background-color: var(--first-color);
+  }
+  
+  .learntools li[type-data="Tool"] {
+    border-left-color: var(--third-color);
+  }
+  
+  .learntools li[type-data="Course"] {
+    border-left-color: var(--fourty-color);
+  }
+  
+  .learntools li[type-data="Framework"] {
+    border-left-color: var();
+  }
+  .learntools li[type-data="language"] {
+    border-left-color: var(  --fifty-color);
+  }
+  .learntools li[type-data="skill"] {
+    border-left-color: var( --sixty-color);
+  }
+  
+  .filter-container {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .filter-container select {
+    margin-left: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid var(--second-color);
+  }
+  
