@@ -6,7 +6,7 @@ from backend.models import User
 
 router = APIRouter()
 
-IMAGE_DIR = "backend/static"
+IMAGE_DIR = "backend/data/static"
 IMAGE_PATH = os.path.join(IMAGE_DIR, "image.jpg")
 CV_PATH = os.path.join(IMAGE_DIR, "cv.pdf")
 

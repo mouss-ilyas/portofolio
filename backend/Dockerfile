@@ -14,9 +14,7 @@ RUN mkdir ./backend/data
 
 # Declare a volume at /app/backend
 VOLUME /app/backend/data
-# Set environment variables
-ENV ADMIN_MAIL a@b.c
-ENV ADMIN_PASSWORD 1234@1234
+
 
 # Expose port
 EXPOSE 8000
