@@ -10,6 +10,8 @@ COPY . /app
 # Install requirements (assuming requirements.txt is in root)
 RUN pip install --no-cache-dir -r requirements.txt
 
+RUN mkdir ./backend/data
+
 # Declare a volume at /app/backend
 VOLUME /app/backend/data
 # Set environment variables

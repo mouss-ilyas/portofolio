@@ -7,6 +7,8 @@ __pycache__/
 *.py[cod]  # Ignore Python bytecode files
 *.pyo
 
+# Database files
+*.db
 
 # Node.js modules
 node_modules/
