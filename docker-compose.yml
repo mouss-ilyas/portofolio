@@ -1,0 +1,24 @@
+services:
+  fastapi-app:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"  
+    volumes:
+      - database-data:/app/backend/database
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: frontend
+    ports:
+      - "80:80"
+    volumes:
+      - ./frontend:/usr/share/nginx/html:ro
+    depends_on:
+      - fastapi-app
+
+volumes:
+  database-data:

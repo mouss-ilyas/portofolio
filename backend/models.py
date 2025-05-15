@@ -6,7 +6,7 @@ from sqlalchemy.orm import Session
 from passlib.context import CryptContext
 
 # Database
-DATABASE_URL = "sqlite:///./backend/database.db"
+DATABASE_URL = "sqlite:///./backend/database/database.db"
 engine = create_engine(DATABASE_URL, connect_args={"check_same_thread": False})
 SessionLocal = sessionmaker(bind=engine, autocommit=False, autoflush=False)
 
@@ -45,7 +45,7 @@ class User(Base):
             return
         
         # Retrieve admin credentials from environment variables
-        email = os.getenv("ADMIN_email")
+        email = os.getenv("ADMIN_MAIL")
         password = os.getenv("ADMIN_PASSWORD")
 
         if not email or not password:
