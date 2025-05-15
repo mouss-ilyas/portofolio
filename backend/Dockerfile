@@ -10,6 +10,8 @@ COPY . /app
 # Install requirements (assuming requirements.txt is in root)
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Declare a volume at /app/backend
+VOLUME /app/backend/data
 # Set environment variables
 ENV ADMIN_MAIL a@b.c
 ENV ADMIN_PASSWORD 1234@1234
