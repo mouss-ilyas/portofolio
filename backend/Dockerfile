@@ -1,19 +1,20 @@
 # Use an official Python runtime as a parent image
 FROM python:3.11-slim
 
-# Set the working directory in the container
+# Set the working directory
 WORKDIR /app
 
-# Copy the current directory contents into the container at /app
-COPY . /app/backend
+# Copy all project files
+COPY . /app
 
-# Install any needed packages specified in requirements.txt
-RUN pip install --no-cache-dir -r backend/requirements.txt
+# Install requirements (assuming requirements.txt is in root)
+RUN pip install --no-cache-dir -r requirements.txt
 
-
+# Set environment variables
 ENV ADMIN_MAIL a@b.c
 ENV ADMIN_PASSWORD 1234@1234
-# Make port 8000 available to the world outside this container
+
+# Expose port
 EXPOSE 8000
 
 # Run uvicorn server
