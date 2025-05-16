@@ -12,8 +12,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 RUN mkdir ./backend/data
 
-# Declare a volume at /app/backend
-VOLUME /app/backend/data
 
 
 # Expose port

@@ -5,6 +5,7 @@ from passlib.context import CryptContext
 from sqlalchemy.orm import Session
 from datetime import datetime, timedelta
 import jwt
+import os
 from backend.models import SessionLocal, User  
 
 
@@ -12,7 +13,7 @@ router = APIRouter()
 
 
 # JWT / Security
-SECRET_KEY = "code@hhh.com///sat,??pasword"
+SECRET_KEY = os.getenv("SECRET_KEY")
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
