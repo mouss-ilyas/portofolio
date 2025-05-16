@@ -1,7 +1,7 @@
-from sqlalchemy import ForeignKey, Integer, String, Column, create_engine
-from sqlalchemy.orm import declarative_base, sessionmaker, relationship
-import os
+from sqlalchemy import  Integer, String, Column, create_engine
+from sqlalchemy.orm import declarative_base, sessionmaker 
 from sqlalchemy.orm import Session
+import os
 from passlib.context import CryptContext
 
 # PostgreSQL database URL
