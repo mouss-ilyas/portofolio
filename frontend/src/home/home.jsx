@@ -1,7 +1,7 @@
 import "./home.css";
 import { API_URL } from "./../config";
 import { useState, useEffect } from "react";
-import "./../images/myimage.jpeg"
+import  j from "./../images/myimage.jpeg" 
 export default function Home() {
 
   const [data, setData] = useState([]);
@@ -49,7 +49,7 @@ export default function Home() {
       <div className="welcomephase">
         <p>Hi, I'm Ilyas Moussnaoui. Welcome to my profile!</p>
         <a
-          href={linkOfCv}
+          href={j}
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-600 underline"
@@ -61,7 +61,7 @@ export default function Home() {
       <div className="d-md-flex">
         <div className="image-container d-flex justify-content-center items-center m-2">
           <img
-            src={linkOfImage}
+            src={j}
             alt="myimage"
             className="rounded shadow-md"
             onError={(e) => {
