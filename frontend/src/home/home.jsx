@@ -1,9 +1,9 @@
 import "./home.css";
 import { API_URL } from "./../config";
 import { useState, useEffect } from "react";
-
+import "./../images/myimage.jpeg"
 export default function Home() {
-  const linkOfImage = `${API_URL}/imagerouter/image`;
+
   const [data, setData] = useState([]);
   const [n, setn] = useState([]);
   const [message, setMessage] = useState("");
