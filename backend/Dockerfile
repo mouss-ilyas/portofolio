@@ -1,18 +1,19 @@
 # Use an official Python runtime as a parent image
-FROM python:3.11-slim
+FROM python:3.11
 
 # Set the working directory
-WORKDIR /app
+WORKDIR /backend
 
-# Copy all project files
-COPY . /app
+# Copy all project files into the container
+COPY . .
 
-RUN apt update && apt upgrade -y
+# Create necessary directories within /backend
+RUN mkdir -p data/static
 
-# Install requirements (assuming requirements.txt is in root)
+# Install requirements
 RUN pip install --no-cache-dir -r requirements.txt
 
-RUN mkdir ./backend/data
+WORKDIR /
 
 # Expose port
 EXPOSE 8000

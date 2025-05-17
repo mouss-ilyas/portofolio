@@ -5,8 +5,7 @@ import os
 from passlib.context import CryptContext
 
 # PostgreSQL database URL
-DATABASE_URL = "postgresql://database_fxhh_user:3OtmZ4wXGorKAXpVsrZdx3EPOUHu2Ye0@dpg-d0jhp33e5dus73chfplg-a.frankfurt-postgres.render.com/database_fxhh"
-
+DATABASE_URL = os.getenv("DATABASE_URL")
 # Create the engine without SQLite-specific args
 engine = create_engine(DATABASE_URL)
 
